@@ -34,6 +34,20 @@
             align-items: center;
         }
 
+        .marquee-text {
+            position: absolute;
+            white-space: nowrap; /* Keep the text in a single line */
+            font-size: 24px; /* Adjust size as needed */
+            color: #e54ebf; /* Text color */
+            will-change: transform; /* Optimizes animations */
+            animation: marquee 10s linear infinite; /* Adjust timing as needed */
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
         .gif-grid img {
             width: 100%;
             height: auto;
@@ -44,6 +58,8 @@
 <body>
     <script src="moneyRain.js"></script>
 <body>
+<div class="marquee-text">Thanks for saying yes Kate c: </div>
+
 <div class="gif-grid">
     <!-- JavaScript will populate this container -->
 </div>
