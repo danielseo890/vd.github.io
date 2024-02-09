@@ -21,3 +21,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.gif_container1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
