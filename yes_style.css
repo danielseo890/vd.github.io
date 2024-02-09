@@ -16,7 +16,16 @@ body {
     margin-bottom: 0px;
 }
 
-.gif_container {
+.images-row {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    gap: 20px; /* Optional: Adds space between the images */
+    height: 100vh; /* Optional: Makes the container fill the viewport height */
+}
+
+/* .gif_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +35,4 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-}
+} */
