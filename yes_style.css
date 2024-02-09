@@ -16,15 +16,28 @@ body {
     margin-bottom: 0px;
 }
 
-.images-row {
-    display: flex;
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
-    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
-    gap: 20px; /* Optional: Adds space between the images */
-    height: 100vh; /* Optional: Makes the container fill the viewport height */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Viewport height */
+    overflow: hidden; /* Hide overflowed parts */
+}
+
+.gif-container img {
+    flex: 1 0 auto; /* Grow to fill the container */
+    max-width: 20%; /* Adjust based on how many GIFs per row you want */
+    height: auto; /* Maintain aspect ratio */
+}
 /* .gif_container {
     display: flex;
     justify-content: center;
