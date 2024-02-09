@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const numberOfMoney = 100; // Number of money elements to rain down
-
+    const styleSheet = document.createElement('style');
+    document.head.appendChild(styleSheet);
+    styleSheet.sheet.insertRule(`
+        @keyframes rain {
+            0% { top: -100px; opacity: 1; }
+            100% { top: 100vh; opacity: 0; }
+        }
+    `, 0);
+    
     for (let i = 0; i < numberOfMoney; i++) {
         let money = document.createElement('div');
         money.classList.add('money');
