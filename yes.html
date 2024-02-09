@@ -6,9 +6,6 @@
     </head> 
     <body>
         <div class="container">
-            <div >
-                <h1 class = "header_text">thank god...</h1>
-            </div>
             <div class="images-row">
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVpbG5wY3JoMDFsanl6cG9tb245Z2k5c21vaG1wYTZqdDR0cXNlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/umgwPR2dHv6CCjmIyq/giphy.gif" alt="Third GIF">
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVpbG5wY3JoMDFsanl6cG9tb245Z2k5c21vaG1wYTZqdDR0cXNlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/umgwPR2dHv6CCjmIyq/giphy.gif" alt="Third GIF">
@@ -34,6 +31,28 @@
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVpbG5wY3JoMDFsanl6cG9tb245Z2k5c21vaG1wYTZqdDR0cXNlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/umgwPR2dHv6CCjmIyq/giphy.gif" alt="Third GIF">
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVpbG5wY3JoMDFsanl6cG9tb245Z2k5c21vaG1wYTZqdDR0cXNlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/umgwPR2dHv6CCjmIyq/giphy.gif" alt="Third GIF">
             </div>
+            <div class="gif-grid">
+    <!-- JavaScript will populate this container -->
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const grid = document.querySelector('.gif-grid');
+    for (let i = 0; i < 100; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('grid-cell');
+        // For a chessboard pattern, fill every other cell with a GIF
+        if ((Math.floor(i / 10) + i) % 2 === 0) { // Adjust this condition for the pattern you desire
+            const img = document.createElement('img');
+            img.src = 'path/to/your/gif.gif'; // Update this path to your GIF
+            img.alt = 'GIF';
+            cell.appendChild(img);
+        }
+        grid.appendChild(cell);
+    }
+});
+</script>
+
             <!-- <div class="gif_container">
                 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDVpbG5wY3JoMDFsanl6cG9tb245Z2k5c21vaG1wYTZqdDR0cXNlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/umgwPR2dHv6CCjmIyq/giphy.gif" alt="Cute animated illustration">
             </div>
