@@ -35,7 +35,7 @@ body, html {
 
 .gif-container img {
     flex: 1 0 auto; /* Grow to fill the container */
-    max-width: 20%; /* Adjust based on how many GIFs per row you want */
+    max-width: 10%; /* Adjust based on how many GIFs per row you want */
     height: auto; /* Maintain aspect ratio */
 }
 /* .gif_container {
