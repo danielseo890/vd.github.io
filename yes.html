@@ -15,11 +15,11 @@
         }
         .money {
             width: 50px;
-            width: 50px;
             height: 50px;
             position: absolute;
             background-size: contain;
             background-repeat: no-repeat;
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGVndGRjcTFsNzZsd3hiYXQxMzg0c3dvMzBlMDdxNzBsMXVlZmx0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/l2YOp5fNAFMp63B3a/giphy.gif'); /* Direct link to a GIF */
         }
 
         .gif-grid {
@@ -64,15 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         grid.appendChild(cell);
     }
 });
-styleSheet.sheet.insertRule(`
-    @keyframes simpleRain {
-        from { top: -100px; }
-        to { top: 100vh; }
-    }
-`, 0);
-
-// And in your JavaScript, apply this simple animation instead:
-money.style.animation = `simpleRain 5s linear infinite`;
 </script>
 
 </body>
